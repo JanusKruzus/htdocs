@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+:root {
+    --white: white;
+    --black: rgb(19,19,19);
+    --brown_light: #AD8174;
+    --brown_dark: #917164;
+    --red_light: #C7493A;
+    --red_dark: #FD4A27;
+    --green: #5CDB95;
+    
+  }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 700;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: white;
 }
 body{
     /*background-image: url("kanjibackgroundv2.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--black);
 
 }
 header{
     display: flex;
-    background-color: rgb(21, 21, 21);
-    color: white;
+    background-color: var(--black);
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
@@ -34,8 +46,8 @@ header{
 }
 .navbar li a{
     text-decoration: none;
-    color: white;
-    font-weight: 700;
+    color: var(--red_dark);
+
     
 }
 .navbar li a:hover{
@@ -60,14 +72,25 @@ header{
 }
 .title_section h1{
     font-size: 30px;
-    font-weight: 800;
+
     
 }
 .title_section p{
     font-size: 20px;
-    font-weight: 800;
+
 }
-.readings{
-    display: flexbox;
-    background-color: red;
+
+.spanTitle{
+    padding-right: 15px;
+    color: var(--brown_light);
+}
+span{
+    padding-right: 10px;
+}
+#getRand{
+    color: var(--red_dark);
+    padding: 7px;
+    background-color: var(--black);
+    border: solid 2px var(--red_dark);
+    border-radius: 10px;
 }
