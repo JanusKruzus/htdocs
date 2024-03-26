@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     //API URLs
     const KANJI_INFO_URL = "https://kanjiapi.dev/v1/kanji/"
+    const KANJI_GRADE_LIST = "https://kanjiapi.dev/v1/kanji/grade-"
     const KANJI_VIDEO_URL = "https://kanjialive-api.p.rapidapi.com/api/public/kanji/"
     const KANJI_LIST_URL = "https://kanjialive-api.p.rapidapi.com/api/public/kanji/all"
 
@@ -17,6 +18,16 @@ $(document).ready(function() {
     }
 
     let kanjiRendered = false;
+
+    $("#startQuiz").click(function(){
+        console.log("AAAAAAAAAAAAAA")
+        $("input[type=checkbox]").each(function(index){
+            if(this.checked){
+                console.log(index)
+            }
+        })
+        
+    })
 
     $("#getRand").click(function() {
 
